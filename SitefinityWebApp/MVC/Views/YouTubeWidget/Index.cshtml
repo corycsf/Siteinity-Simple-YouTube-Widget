@@ -1,0 +1,13 @@
+@model  SitefinityWebApp.Mvc.Models.YouTubeWidgetViewModel
+@using System;
+
+@if (!string.IsNullOrEmpty(Model.YouTubeVideoUrl))
+{
+    <div class="you-tube-widget-wrapper">
+        <iframe width="500" height="300" src="@Model.YouTubeVideoUrl?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+}
+else
+{
+    <h2>Add YouTube Video URL</h2>
+}
